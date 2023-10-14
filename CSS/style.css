@@ -1,0 +1,796 @@
+/* COMMON CSS STARTS */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans&family=Ubuntu:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+ul li{
+    list-style: none;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+:root{
+    --primaryfont: 'Ubuntu', sans-serif;
+    --secondaryfont: 'Abril Fatface', cursive;
+    --thirdfont: 'Open Sans', sans-serif;
+    --primarycolor: #0f2f44;
+    --secondarycolor: #ffc712;
+    --thirdcolor: #222222;
+    --fourthcolor:#8484bf;
+    
+}
+.align-center{
+    align-items: center;
+}
+
+
+body{
+    font-family: var(--primaryfont);
+}
+button{
+    padding: 14px 20px;
+    background-color: var(--fourthcolor);
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--primaryfont);
+    
+}
+button a{
+    color: white;
+}
+
+
+/* COMMON CSS ENDS */
+
+/* HEADER STARTS */
+header{
+    background-color: var(--primarycolor);
+    color: white;
+}
+
+header .opening,
+header .welcome{
+    width: 50%;
+    padding: 19px 0;
+    
+}
+
+header .opening{
+    text-align: right;
+}
+/* HEADER ENDS */
+
+
+/* NAV STARTS */
+
+nav .logo{
+    width: 30%;
+}
+
+nav .menu{
+    width: 70%;
+    text-align: right;
+}
+
+nav .menu ul li{
+    display: inline-block;
+
+}
+nav .menu ul li a{
+    font-weight: 500;
+    color: #222222;
+    font-size: 16px;
+    padding: 40px 19px;
+    display: inline-block;
+    transition: 0.35s;
+    
+}
+nav .menu ul li:hover a{
+    background-color: #fff9e6;
+    color: var(--secondarycolor);
+}
+nav .menu ul li span{
+    border: 1px solid #999999;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    color: #999999;
+    cursor: pointer;
+
+}
+
+
+
+
+/* NAV ENDS */
+
+
+/* BANNER 1 STARTS */
+#banner_1{
+    background-image: url(../images/banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    background-position: center;
+}
+
+#banner_1 .para1{
+    width: 40%;
+    padding: 140px 0;
+
+
+}
+#banner_1 .para1 h4{
+    font-size: 50px;
+    font-weight: 300;
+    font-family: var(--primaryfont);
+    color: var(--primarycolor);
+    line-height: 2px;
+}
+#banner_1 .para1 h1{
+    font-size: 80px;
+    font-weight: 400;
+    font-family: var(--secondaryfont);
+    color: var(--primarycolor);
+    text-transform: uppercase;
+
+}
+
+#banner_1 .para1 h5{
+    font-size: 32px;
+    font-weight: 400;
+    font-family: var(--primaryfont);
+    color: var(--fourthcolor);
+    letter-spacing: 14px ;
+    line-height: 3px;
+    
+}
+#banner_1 .para1 p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--thirdfont);
+    color: #444444;
+    padding: 34px 0;
+   
+}
+span a{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--fourthcolor);
+    margin-left: 20px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+/* BANNER 1 ENDS */
+
+
+
+/* BANNER 2 STARTS */
+#banner_2{
+    padding: 100px 0;
+    height: 680px;
+}
+#banner_2 .details{
+    width: 50%;
+    
+}
+#banner_2 .banner2{
+    width: 50%;
+}
+.details h5{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--primarycolor);
+}
+
+.details h2{
+    font-size: 32px;
+    font-family: var(--secondaryfont);
+    font-weight: 400;
+    color: var(--primarycolor);
+}
+.details p{
+    font-size: 16px;
+    font-family: var(--thirdfont);
+    font-weight: 400;
+    color: var(--primarycolor);
+    padding-top: 30px;
+   
+}
+.details .para_2{
+    font-size: 16px;
+    font-family: var(--thirdfont);
+    font-weight: 400;
+    color: var(--primarycolor);
+    margin-left: 30px;
+    line-height: 30px;
+    padding-bottom: 32px;
+
+}
+.details .btn2{
+    background-color: var(--secondarycolor);
+    color: var(--primarycolor);
+    font-weight: 800;
+    margin-right: 20px;
+    box-shadow: #fff9e6 0px 5px 15px;
+}
+.details .btn3{
+    background-color: #ffffff;
+    color: var(--primarycolor);
+    font-weight: 800;
+    box-shadow: #00000057 0px 5px 15px;
+}
+
+/* BANNER 2 ENDS */
+
+
+/* BANNER 3 STARTS */
+.img2{
+    width: 50%;
+    
+}
+
+.img2 img{
+    width: 100%;
+}
+.skill{
+    width: 50%;
+    text-align: right;
+}
+
+.skill h5{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--primarycolor);
+}
+
+.skill h2{
+    font-size: 32px;
+    font-family: var(--secondaryfont);
+    font-weight: 400;
+    color: var(--primarycolor);
+}
+.skill p{
+    font-size: 16px;
+    font-family: var(--thirdfont);
+    font-weight: 400;
+    color: var(--primarycolor);
+    padding: 30px 0;
+}
+
+/* BANNER 3 ENDS */
+
+
+/* *SERVICES STARTS */
+#services{
+    
+    background-color: #f5f5f5;
+    padding: 60px 0;
+    
+}
+.services_head h5{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--primarycolor);
+}
+
+.services_head h2{
+    font-size: 32px;
+    font-family: var(--secondaryfont);
+    font-weight: 400;
+    color: var(--primarycolor)
+}
+.services_head{
+    text-align: center;
+    padding-bottom: 57px;
+    
+}
+
+.services_card{
+    width: calc(33.33% - 30px);
+    background-color: #e9e9e9;
+    margin: 0 15px;
+    position: relative;
+    
+}
+
+.services_card .icon{
+    width: 30%;
+    text-align: center;
+    
+}
+.services_card .cnt{
+    width: 70%;
+    padding: 30px 20px;
+    background-color: #ededed;
+    
+}
+.services_card .cnt h4{
+    font-size: 20px;
+    font-weight: 700;
+    color: #222222;
+    padding-bottom: 28px;
+}
+.services_card .cnt p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #444444;
+    line-height: 20px;
+    font-family: var(--thirdfont);
+}
+.services_card .overlay{
+    text-align: center;
+    background-color: var(--primarycolor);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 40px;
+    border-radius: 5px;
+    /* visibility: hidden; */
+    opacity: 0;
+    transition: 0.3s;
+}
+.services_card:hover .overlay{
+    opacity: 1;
+}
+.services_card .overlay h3{
+    padding: 20px 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--primaryfont);
+}
+.services_card .overlay a{
+    border: 1px solid #999999;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    color: var(--primarycolor);
+    background-color: var(--secondarycolor);
+    position: absolute;
+    bottom: -20px;
+    left: calc(0% - 20px);
+    transition: 0.3s;
+    transition-delay: 0.3s;
+}
+
+.services_card:hover .overlay a{
+    left: calc(50% - 20px);
+}
+/* *SERVICES ENDS */
+
+
+
+/*  PORTFOLIO STARTS */
+
+#portfolio{
+    text-align: center;
+    padding: 100px 0;
+}
+#portfolio h5{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--primarycolor);
+}
+#portfolio h2{
+    font-size: 32px;
+    font-family: var(--secondaryfont);
+    font-weight: 400;
+    color: var(--primarycolor)
+}
+
+#portfolio .portfolio_card{
+    width: calc(33.33% - 60px);
+    margin: 0 30px;
+    padding: 60px 0;
+    position: relative;
+    border-radius: 5px;
+    
+    
+}
+#portfolio .portfolio_card img{
+    width: 100%;
+    display: block;
+}
+
+
+
+.portfolio_card .port_overlay{
+    background-color: #ffffff;
+    padding: 32px 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primarycolor);
+    position: absolute;
+    bottom: 59px;
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: 0.35s;
+    transform: scaleY(0);
+    transform-origin: bottom;
+
+}
+
+.portfolio_card:hover .port_overlay{
+    transform: scaleY(1);
+}
+
+#portfolio a{
+    background-color: var(--secondarycolor);
+    padding: 17px 20px;
+    color: var(--primarycolor);
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+
+/*  PORTFOLIO ENDS */
+
+
+/* TESTIMONIAL STARTS */
+
+#testimonial{
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 60px 0;
+}
+
+#testimonial h5{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--primarycolor);
+}
+
+#testimonial h2{
+    font-size: 32px;
+    font-family: var(--secondaryfont);
+    font-weight: 400;
+    color: var(--primarycolor);
+    padding-bottom: 60px;
+    
+}
+
+.testimonial_card{
+    width: calc(50% - 30px);
+    margin: 0 15px;
+    border-radius: 5px;
+    height: 215px;
+
+}
+
+.testimonial_card .img{
+    width: 30%;
+}
+.testimonial_card .img img{
+    width: 100%;
+    height: 100%;
+}
+.testimonial_card .san{
+    width: 70%;
+    text-align: left;
+    padding: 30px 20px;
+    background-color: #e9e9e9;
+    line-height: 20px;
+}
+
+.testimonial_card .san p{
+    padding-bottom: 35px;
+    
+}
+/* TESTIMONIAL ENDS */
+
+
+
+
+/* BLOGS STARTS */
+#blog{
+    padding: 100px 0;
+    text-align: center;
+}
+#blog h5{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--primarycolor);
+}
+
+#blog h2{
+    font-size: 32px;
+    font-family: var(--secondaryfont);
+    font-weight: 400;
+    color: var(--primarycolor);
+    
+}
+
+.blog-card{
+    width: calc(33.33% - 60px);
+    background-color: #f5f5f5;
+    margin: 60px 30px;
+    padding: 0 0 20px 0;
+    border-radius: 5px;
+    position: relative;
+    
+    
+}
+.blog-card .image img{
+    width: 100%;
+    display: block;
+    padding: 20px 28px;
+}
+
+.blog-card .blog_cnt{
+    text-align: left;
+    padding: 0 28px;
+    
+}
+.blog_cnt p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #777777;
+    font-family: var(--primaryfont);
+}
+.blog_cnt h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: #222222;
+    font-family: var(--primaryfont);
+    padding: 20px 0 30px;
+}
+.blog_cnt a{
+    font-size: 16px;
+    font-weight: 700;
+    color: #777777;
+    font-family: var(--primaryfont);
+    
+}
+.blog_cnt .arrow{
+    font-size: 16px;
+    color: #777777;
+    background-color: none;
+    border: none;
+    padding-left: 10px;
+}
+
+.blog_overlay{
+    position: absolute;
+    background-color: var(--primarycolor);
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    visibility: hidden;
+    padding: 0 0 20px 0;
+    border-radius: 5px;
+    transition: 0.35s;
+    transform: scaleX(0);
+    transform-origin: left;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.blog-card:hover .blog_overlay{
+    visibility: visible;
+    transform: scaleX(1);
+
+}
+.blog_overlay .blog_cnt p{
+    color: white;
+}
+.blog_overlay .blog_cnt h3{
+    color: white;
+}
+.blog_overlay .blog_cnt a{
+    color: white;
+}
+
+#blog a button{
+    background-color: var(--secondarycolor);
+    color: var(--primarycolor);
+    box-shadow: rgba(93, 90, 50, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+/* BLOGS ENDS */
+
+
+/* FOOTER STARTS */
+footer{
+    padding-top: 100px;
+    padding-bottom: 60px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+   
+}
+footer .bizzency{
+    width: 25%;
+    
+}
+footer .bizzency p{
+    padding: 30px 0;
+    font-size: 14px;
+    font-family: var(--thirdfont);
+    font-weight: 400;
+    color: #777777;
+    line-height: 25px;
+}
+footer .bizzency ul li a{
+    color: var(--primarycolor);
+    
+    border: 1px solid var(--primarycolor);
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+    margin: 0 5px 0;
+    transition: 0.2s;
+}
+footer .bizzency ul li:hover a{
+    background-color: var(--primarycolor);
+    color: white;
+}
+
+
+
+
+footer .Contact{
+    width: 25%;
+    
+}
+footer .Contact h4{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--primaryfont);
+    color: #222222;
+    padding-bottom: 40px;
+}
+.Contact .contact_logo{
+    width: 10%;
+    color: #777777;
+    font-size: 24px;
+}
+.Contact .text{
+    width: 90%;
+    font-size: 14px;
+    font-family: var(--thirdfont);
+    font-weight: 400;
+    color: #777777;
+    padding-left: 15px;
+}
+
+.Contact .mail{
+    padding: 30px 0;
+}
+.Contact .mail a{
+    width: 90%;
+    color: #777777;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--thirdfont);
+}
+
+.Contact .text a{
+    width: 90%;
+    color: #777777;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--thirdfont);
+    line-height: 26px;
+
+}
+
+
+footer .link{
+    width: 15%;
+    
+}
+footer .link h4{
+    font-size: 20px;
+    font-family: var(--primaryfont);
+    font-weight: 700;
+    color: #222222;
+    padding-bottom: 35px;
+}
+footer .link ul li a{
+    color: #444444;
+    font-size: 14px;
+    font-family: var(--thirdfont);
+    font-weight: 400;
+    padding-bottom: 30px;
+    display: inline-block;
+    transition: 0.3s;
+}
+footer .link ul li:hover a{
+    color: var(--primarycolor);
+    padding-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+footer .stream{
+    width: 35%;
+   
+}
+footer .stream h4{
+    font-size: 20px;
+    font-family: var(--primaryfont);
+    font-weight: 700;
+    color: #222222;
+    padding-bottom: 35px;
+    margin-left: 7.5px;
+    
+}
+.stream .stream_img{
+    width: calc(25% - 15px);
+    margin: 7.5px;
+    
+    
+    
+}
+.stream .stream_img img{
+    width: 100%;
+    height: 100%;
+    
+}
+/* FOOTER ENDS */
+
+
+/* LAST PART STARTS */
+.last_part{
+    background-color: #fefefe;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: #222222;
+}
+.last_part p{
+    font-size: 14px;
+    font-family: var(--thirdfont);
+    font-weight: 400;
+    color: #777777;
+}
+.last_part p span a{
+    color: var(--secondarycolor);
+    display: inline-block;
+    
+}
+.last_part p span{
+    margin: 0 ;
+    margin-right: 25px;
+}
+
+/* LAST PART ENDS */
